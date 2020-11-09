@@ -1,3 +1,15 @@
-console.log("testw")
+import { ControllerManager } from './Controller/ControllerManager';
 
-console.log("test2")
+
+
+export class Main
+{
+    constructor()
+    {
+        let controllerManager = new ControllerManager();
+    }
+}
+window.addEventListener("load" , () =>
+{
+    new Main();
+})
